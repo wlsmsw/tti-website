@@ -16,7 +16,7 @@
         <link rel="shortcut icon" href="<?=base_url('assets/img/tti-icon.png')?>" type="image/x-icon">
         <link rel="icon" href="<?=base_url('assets/img/tti-icon.png')?>" type="image/x-icon">
 
-        <title>Tochigi-ken Technologies International Inc. - Home</title>
+        <title>Tochigi-ken Technologies International Inc.</title>
 
         <!-- font family -->
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
@@ -36,7 +36,6 @@
 
     </head>
     <body>
-        <div class="trigger"><a href="#menu-desk"><span></span></a></div>
         
         <div class="navik-header header-opacity header-shadow">
             <div class="container-fluid">
@@ -46,7 +45,7 @@
                         <div class="navik-header-container">
                           
                             <div class="logo" data-mobile-logo="<?=base_url('assets/img/tti-nobg-2.png')?>" data-sticky-logo="<?=base_url('assets/img/tti-nobg-2.png')?>">
-                                <a href="#"><img src="<?=base_url('assets/img/tti-nobg-2.png')?>" alt="logo"/></a>
+                                <a href="<?=base_url()?>"><img src="<?=base_url('assets/img/tti-nobg-2.png')?>" alt="logo"/></a>
                             </div>
 
                             <div class="burger-menu">
@@ -57,9 +56,6 @@
 
                             <nav class="navik-menu menu-caret submenu-top-border submenu-scale">
                                 <ul>
-                                    <li class="">
-                                      <a class="" href="#">Home</a>
-                                    </li>
                                     <li class="">
                                         <a class="" href="about-us.php">About Us</a>
                                     </li>
