@@ -16,6 +16,9 @@
         <link rel="shortcut icon" href="<?=base_url('assets/img/tti-icon.png')?>" type="image/x-icon">
         <link rel="icon" href="<?=base_url('assets/img/tti-icon.png')?>" type="image/x-icon">
 
+        <link href="<?=base_url('assets/css/tagsinput.css')?>" rel="stylesheet">
+        <link href="<?=base_url('assets/css/cookie.css')?>" rel="stylesheet">
+
         <title>Tochigi-ken Technologies International Inc.</title>
 
         <!-- font family -->
@@ -36,7 +39,8 @@
 
     </head>
     <body>
-        
+        <div class="trigger"><a href="#menu-desk"><span></span></a></div>
+
         <div class="navik-header header-opacity header-shadow">
             <div class="container-fluid">
 
@@ -300,7 +304,7 @@
                     </div>
                     <div class="col-md-2 col-sm-3">
                         <div class="privacy-button">
-                            <button class="btn btn-success btn-sm" onclick="ns_hide()">Agree</button>
+                            <button class="btn btn-success btn-sm" onclick="ns_hide()" style="background-color:#d60f07 !important">Agree</button>
                         </div>
                     </div>
                     <div class="clearfix"></div>

@@ -1,0 +1,8 @@
+.privacy-notice {display:none;background:#222;padding:15px 0;z-index:999;bottom:0;position:fixed;width:100%;}
+.privacy-notice h1 {color:#fff;padding:0;margin:0;}
+.privacy-notice p {color:#fff;padding:0;margin:0;}
+.privacy-notice a {color:#fff;padding:0;margin:0;text-decoration:underline;font-style:italic;}
+.privacy-button {text-align:right;padding-top:10px;}
+.privacy-button button {padding:6px 20px;}
+
+@media (min-width: 1200px) { .navik-header.sticky { top:0; } }
