@@ -88,6 +88,8 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 //site urls
 if($_SERVER['SERVER_NAME'] == 'ureshii-tech.com'){
     define('_SITE_URL_', 'https://ureshii-tech.com/tti-website/');
+}else if($_SERVER['SERVER_NAME'] == 'mswsites.com'){
+    define('_SITE_URL_', 'https://mswsites.com/tti-prod/');
 }else{
     define('_SITE_URL_', 'http://localhost/tti/');
 }
