@@ -90,7 +90,7 @@
         <div id="wf-banner">
             <div class="banner-content" backg>
                                
-                <img src="<?=base_url('assets/img/plan-bg.jpg')?>" style="width:100%" >
+                <img src="<?=base_url('assets/img/plan-bg.webp')?>" style="width:100%" >
 
                 <div class="color-overlay"></div>
 
