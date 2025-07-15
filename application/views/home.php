@@ -61,6 +61,9 @@
                             <nav class="navik-menu menu-caret submenu-top-border submenu-scale">
                                 <ul>
                                     <li class="">
+                                        <a class="" href="">Home</a>
+                                    </li>
+                                    <li class="">
                                         <a class="" href="about-us.php">About Us</a>
                                     </li>
                                     <li class="">
@@ -90,7 +93,7 @@
         <div id="wf-banner">
             <div class="banner-content" backg>
                                
-                <img src="<?=base_url('assets/img/plan-bg.webp')?>" style="width:100%" >
+                <img src="<?=base_url('assets/img/plan-bg.webp')?>" style="width:100%" id="myVideo">
 
                 <div class="color-overlay"></div>
 
@@ -148,7 +151,6 @@
                         </div>
                     </div>
 
-                    <div class="clearfix"></div>
 
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="story-box hvr-shrink">
@@ -234,20 +236,6 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2">
-                                     
-                        <p><img src="<?=base_url('assets/img/footnote1.jfif')?>" /></p>
-                        
-                        <p><img src="<?=base_url('assets/img/footnote2.jfif')?>" /></p>         
-
-                    </div>
-
-                    <div class="col-md-2">
-                      
-                        <p><img src="<?=base_url('assets/img/footnote3.jfif')?>" /></p>
-
-                    </div>
-
                     <div class="clearfix">&nbsp;</div>
                 </div>
             </div>
@@ -304,7 +292,7 @@
                     </div>
                     <div class="col-md-2 col-sm-3">
                         <div class="privacy-button">
-                            <button class="btn btn-success btn-sm" onclick="ns_hide()" style="background-color:#d60f07 !important">Agree</button>
+                            <button class="btn btn-danger btn-sm" onclick="ns_hide()">Agree</button>
                         </div>
                     </div>
                     <div class="clearfix"></div>

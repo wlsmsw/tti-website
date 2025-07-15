@@ -1737,13 +1737,14 @@ Media queries for responsive design
 	.header-opacity-on .navik-menu > ul > li > a {
 		color: #000;
 		font-weight: bolder;
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.header-transparent-on .navik-menu > ul > li:hover > a,
 	.header-transparent-on .navik-menu > ul > li.current-menu > a,
 	.header-opacity-on .navik-menu > ul > li:hover > a,
 	.header-opacity-on .navik-menu > ul > li.current-menu > a {
 		color: #d60f07;
+		text-decoration: underline;
 	}
 	.header-transparent-on .navik-menu > ul > li.dropdown_menu > a > span:before,
 	.header-opacity-on .navik-menu > ul > li.dropdown_menu > a > span:before {
