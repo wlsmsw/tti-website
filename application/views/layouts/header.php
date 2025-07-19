@@ -38,7 +38,7 @@
 
     <body>
         
-        <div class="navik-header header-opacity header-shadow">
+        <div class="navik-header header-opacity header-shadow viewport-lg sticky">
             <div class="container-fluid">
 
                 <div class="row">
@@ -46,7 +46,7 @@
                         <div class="navik-header-container">
                           
                             <div class="logo" data-mobile-logo="<?=base_url('assets/img/tti-nobg-2.png')?>" data-sticky-logo="<?=base_url('assets/img/tti-nobg-2.png')?>">
-                                <a href="<?=base_url()?>"><img src="<?=base_url('assets/img/tti-nobg-2.png')?>" alt="logo"/></a>
+                                <img src="<?=base_url('assets/img/tti-nobg-2.png')?>" alt="logo"/>
                             </div>
 
                             <div class="burger-menu">
@@ -58,10 +58,15 @@
                             <nav class="navik-menu menu-caret submenu-top-border submenu-scale">
                                 <ul>
                                     <li class="">
-                                      <a class="" href="#">Home</a>
+                                      <a class="" href="<?=base_url()?>">Home</a>
                                     </li>
-                                    <li class="">
-                                        <a class="" href="about-us.php">About Us</a>
+                                    <li class="<?=($page == 'About Us') ? 'active' : ''?>">
+                                        <a class="" href="<?=base_url('company-overview')?>">About Us</a>
+                                        <ul>
+                                            <li><a class="" href="<?=base_url('company-overview')?>">Company Overview</a></li>
+                                            <li><a class="" href="<?=base_url('mission-vision')?>">Mission & Vision</a></li>
+                                            <li><a class="" href="<?=base_url('quality-policy')?>">Quality Policy & Objectives</a></li>
+                                        </ul>
                                     </li>
                                     <li class="">
                                         <a class="" href="products.php">Products/Services</a>

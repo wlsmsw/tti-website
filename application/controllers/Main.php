@@ -21,12 +21,39 @@ class Main extends CI_Controller {
 		//$this->load->view('layouts/footer');
 	}
 	
-	public function about_us(){
+	public function policyCookie(){
+	    
+	    $data['page'] = 'Cookie Policy';
+
+	    $this->load->view('layouts/header',$data);
+		$this->load->view('cookie-policy');
+		$this->load->view('layouts/footer');
+	}
+	
+	public function companyOverview(){
 	    
 	    $data['page'] = 'About Us';
-	    
+
 	    $this->load->view('layouts/header',$data);
-		$this->load->view('about_us');
+		$this->load->view('company-overview');
+		$this->load->view('layouts/footer');
+	}
+	
+	public function missionVision(){
+	    
+	    $data['page'] = 'About Us';
+
+	    $this->load->view('layouts/header',$data);
+		$this->load->view('mission-vision');
+		$this->load->view('layouts/footer');
+	}
+	
+	public function qualityPolicy(){
+	    
+	    $data['page'] = 'About Us';
+
+	    $this->load->view('layouts/header',$data);
+		$this->load->view('quality-policy');
 		$this->load->view('layouts/footer');
 	}
 

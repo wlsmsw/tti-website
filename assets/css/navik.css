@@ -1591,7 +1591,7 @@ Media queries for responsive design
 		animation-name: stickyTransition;
 	}
 	.navik-header.sticky .navik-header-container {
-		height: 70px;
+		height: 90px;
 	}
 	.navik-header.sticky .navik-menu > ul > li > a {
 		height: 70px;
@@ -1743,8 +1743,7 @@ Media queries for responsive design
 	.header-transparent-on .navik-menu > ul > li.current-menu > a,
 	.header-opacity-on .navik-menu > ul > li:hover > a,
 	.header-opacity-on .navik-menu > ul > li.current-menu > a {
-		color: #d60f07;
-		text-decoration: underline;
+		color: #d60f07 !important;
 	}
 	.header-transparent-on .navik-menu > ul > li.dropdown_menu > a > span:before,
 	.header-opacity-on .navik-menu > ul > li.dropdown_menu > a > span:before {
@@ -1917,7 +1916,7 @@ Media queries for responsive design
 	Submenu
 	================================================ */
 	.navik-menu.submenu-top-border li > ul {
-		border-top: 3px solid #ff7e00;
+		border-top: 5px solid #fff;
 	}
 	.navik-menu.submenu-top-border li > ul ul {
 		top: -30px;

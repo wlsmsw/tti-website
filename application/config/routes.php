@@ -53,4 +53,9 @@ $route['default_controller'] = 'main/homepage';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['about_us'] = 'main/about_us';
+$route['cookie-policy']     =   'main/policyCookie';
+
+/*about us*/
+$route['company-overview']  =   'main/companyOverview';
+$route['mission-vision']    =   'main/missionVision';
+$route['quality-policy']    =   'main/qualityPolicy';
