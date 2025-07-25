@@ -1,0 +1,43 @@
+.subcontent-page .demo ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.subcontent-page .demo li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.subcontent-page .demo img {
+    display: block;
+    height: auto;
+    width: auto;
+}
+
+.lSSlideOuter .lSPager.lSGallery{
+        
+    margin: auto !important;
+}        
+.lSAction>a {
+    margin-top:-50px !important;
+}
+
+@media (min-width: 2500px){
+    .lSSlideOuter {
+    text-align: center ;
+    }
+    
+    .lSSlideOuter .lSPager.lSGallery{
+        
+        width:auto !important;
+        display: inline-block ;
+        text-align: left ;
+        transform: translate3d(0px, 0px, 0px) !important;
+        
+    }
+    
+    .lSSlideOuter .lSPager.lSGallery li{
+        width: 50px !important;
+    }
+}

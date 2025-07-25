@@ -1,5 +1,7 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
+        
+        
         <div id="wf-footer">
             <div class="container">
                 <div class="row">
@@ -9,7 +11,7 @@
                             <h2>Contact us</h2>
 
                             <p><strong>Our Office</strong><br />
-                            5th St., Blk 5 Lot 6, Golden Mile Business Park, Brgy. Maduya, Carmona, Cavite</p>
+                            5th St., Blk 7 Lot 6, Golden Mile Business Park, Brgy. Maduya, Carmona, Cavite</p>
 
                             <p><strong>Telephone</strong><br />
                             +63 (46) 482-0731<br />
@@ -65,7 +67,7 @@
                         <div class="copyright-content">
                             <ul>
                               <li><a href="news.php">News</a></li>
-                              <li><a href="contact-us.php">Contact Us</a></li>
+                              <li><a href="<?=base_url('contact-us')?>">Contact Us</a></li>
                               <li><a href="<?=base_url('cookie-policy')?>">Privacy Policy</a></li>
                             </ul>
                         </div>
@@ -87,6 +89,7 @@
 
         <script type="text/javascript" src="<?=base_url('assets/js/jquery-1.11.3.min.js')?>"></script>
         <script type="text/javascript" src="<?=base_url('assets/js/bootstrap.min.js')?>"></script>
+        <script type="text/javascript" src="<?=base_url('assets/js/lightslider.min.js')?>"></script>
         <script type="text/javascript" src="<?=base_url('assets/js/script.js')?>"></script>
 
         <script src="<?=base_url('assets/js/navik.menu.js')?>"></script>
@@ -146,6 +149,66 @@
                   document.getElementById("ns-box").style.display = "none";
                 }
             });
+        </script>
+        
+        <!-- light slider projects -->
+        <script>
+            $("#lightSlider").lightSlider({
+                onSliderLoad: function (el) {
+                        var maxHeight = 0,
+                        container = $(el),
+                        children = container.children();
+                        children.each(function () {
+                            var childHeight = $(this).height();
+                                if (childHeight > maxHeight) {
+                                    maxHeight = childHeight;
+                                }
+                        });
+                        container.height(maxHeight);
+                },
+            item:2,
+            loop:true,
+            slideMove:1,
+            auto:false,
+            easing: "cubic-bezier(0.25, 0, 0.25, 1)",
+            speed:600,
+            thumbItem: 10,	
+            pager: true,	
+            gallery:true,
+            galleryMargin: 20,
+            thumbMargin: 3,
+            responsive : [
+              {
+                breakpoint:1400,
+                settings: {
+                  item:2,
+                  slideMove:1
+                }
+              },
+              {
+                breakpoint:992,
+                settings: {
+                  item:2,
+                  slideMove:1
+                }
+              },
+              {
+                breakpoint:768,
+                settings: {
+                  item:2,
+                  slideMove:1
+                }
+              },
+              {
+                breakpoint:576,
+                settings: {
+                  item:1,
+                  slideMove:1
+                }
+              }
+            ]
+          });
+
         </script>
 
     </body>

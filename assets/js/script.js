@@ -69,7 +69,7 @@ $(function(){
 
         },
 
-        navText: ['<img src="images/misc/owl-prev.png" />','<img src="images/misc/owl-next.png" />']
+        navText: ['<img src="assets/img/tti-previous.png" />','<img src="assets/img/tti-next.png" />']
 
     });
 
@@ -139,7 +139,7 @@ $(function(){
 
       },
 
-      navText: ['<img src="images/misc/owl-prev.png" />','<img src="images/misc/owl-next.png" />']
+      navText: ['<img src="assets/img/tti-previous.png" />','<img src="assets/img/tti-next.png" />']
 
   });
 
@@ -197,7 +197,7 @@ $(function(){
 
         },
 
-        navText: ['<img src="images/misc/owl-prev.png" />','<img src="images/misc/owl-next.png" />']
+        navText: ['<img src="assets/img/tti-previous.png" />','<img src="assets/img/tti-next.png" />']
 
     });
 
@@ -261,12 +261,14 @@ jQuery(document).ready(function($) {
 
       },
 
-      navText: ['<img src="images/misc/owl-prev.png" />','<img src="images/misc/owl-next.png" />']
+      navText: ['<img src="assets/img/tti-previous.png" />','<img src="assets/img/tti-next.png" />']
 
   });
 
 });
 
 $(document).ready(function(){
+    
 		$("#myModal").modal('show');
+		
 	});

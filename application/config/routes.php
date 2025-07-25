@@ -54,8 +54,12 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['cookie-policy']     =   'main/policyCookie';
+$route['contact-us']        =   'main/contactUs';
 
 /*about us*/
 $route['company-overview']  =   'main/companyOverview';
 $route['mission-vision']    =   'main/missionVision';
 $route['quality-policy']    =   'main/qualityPolicy';
+
+/*projects*/
+$route['projects/(:any)']   =   'main/getProjects';

@@ -75,7 +75,14 @@
                                         <a class="" href="products.php">Products/Services</a>
                                     </li>
                                     <li class="">
-                                        <a class="" href="projects.php">Projects</a>
+                                        <a class="" href="#">Projects</a>
+                                        <ul>
+                                            <?php 
+                                                foreach($projects as $p){
+                                                    echo '<li><a class="" href="'.base_url('projects/'.$p['cat_slug']).'">'.$p['cat_name'].'</a></li>';
+                                                }
+                                            ?>
+                                        </ul>
                                     </li>
                                     <li class="">
                                         <a class="" href="news.php">News</a>
@@ -84,7 +91,7 @@
                                         <a class="" href="careers.php">Careers</a>
                                     </li>
                                     <li class="">
-                                        <a class="" href="contact-us.php">Contact Us</a>
+                                        <a class="" href="<?=base_url('contact-us')?>">Contact Us</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -109,7 +116,7 @@
 
                             <h2 data-aos="fade-up" data-aos-delay="200">Your solution in innovative construction</h2>
                             <p data-aos="fade-up" data-aos-delay="400">Our Policy is to create a Global perspective as a solution provider responding to the needs of our customer with Best Quality, Lead Time and Low Cost.</p>
-                            <a href="#" class="hvr-shadow-radial link-out" data-aos="fade-up" data-aos-delay="600">Learn more</a> <!--add about us link-->
+                            <a href="<?=base_url('company-overview')?>" class="hvr-shadow-radial link-out" data-aos="fade-up" data-aos-delay="600">Learn more</a> <!--add about us link-->
                         </div>
                     </div>
             </div>
@@ -197,7 +204,7 @@
                             <h2>Contact us</h2>
 
                             <p><strong>Our Office</strong><br />
-                            5th St., Blk 5 Lot 6, Golden Mile Business Park, Brgy. Maduya, Carmona, Cavite</p>
+                            5th St., Blk 7 Lot 6, Golden Mile Business Park, Brgy. Maduya, Carmona, Cavite</p>
 
                             <p><strong>Telephone</strong><br />
                             +63 (46) 482-0731<br />

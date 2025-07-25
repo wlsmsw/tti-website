@@ -1372,7 +1372,7 @@ Media queries for responsive design
 	}
 	.navik-header .logo img {
 		max-width: inherit;
-		max-height: 80px;
+		max-height: 65px;
 		width: auto;
 	}
 	.burger-menu {
@@ -1589,9 +1589,10 @@ Media queries for responsive design
 		animation-fill-mode: both;
 		-webkit-animation-name: stickyTransition;
 		animation-name: stickyTransition;
+		height: 80px;
 	}
 	.navik-header.sticky .navik-header-container {
-		height: 90px;
+		height: 50px;
 	}
 	.navik-header.sticky .navik-menu > ul > li > a {
 		height: 70px;
@@ -1604,7 +1605,7 @@ Media queries for responsive design
 		padding: 0;
 	}
 	.navik-header.sticky .logo img {
-		max-height: 70px;
+		max-height: 65px;
 	}
 	@-webkit-keyframes stickyTransition {
 		from {

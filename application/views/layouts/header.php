@@ -24,6 +24,9 @@
         <!-- font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
+        <!-- light slider -->
+        <link type="text/css" rel="stylesheet" href="<?=base_url('assets/css/lightslider.min.css')?>" />          
+        
         <!-- Bootstrap -->
         <link rel="stylesheet" href="<?=base_url('assets/css/bootstrap.css')?>">
         <link rel="stylesheet" href="<?=base_url('assets/css/aos.css')?>">
@@ -33,6 +36,7 @@
         <link rel="stylesheet" href="<?=base_url('assets/css/navik.css')?>">
         <link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>">
         <link rel="stylesheet" href="<?=base_url('assets/css/stylesheet.css')?>">
+        <link rel="stylesheet" href="<?=base_url('assets/css/lightslider.custom.css')?>">
 
     </head>
 
@@ -72,7 +76,14 @@
                                         <a class="" href="products.php">Products/Services</a>
                                     </li>
                                     <li class="">
-                                        <a class="" href="projects.php">Projects</a>
+                                        <a class="" href="#">Projects</a>
+                                        <ul>
+                                            <?php 
+                                                foreach($projects as $p){
+                                                    echo '<li><a class="" href="'.base_url('projects/'.$p['cat_slug']).'">'.$p['cat_name'].'</a></li>';
+                                                }
+                                            ?>
+                                        </ul>
                                     </li>
                                     <li class="">
                                         <a class="" href="news.php">News</a>
@@ -81,7 +92,7 @@
                                         <a class="" href="careers.php">Careers</a>
                                     </li>
                                     <li class="">
-                                        <a class="" href="contact-us.php">Contact Us</a>
+                                        <a class="" href="<?=base_url('contact-us')?>">Contact Us</a>
                                     </li>
                                 </ul>
                             </nav>
