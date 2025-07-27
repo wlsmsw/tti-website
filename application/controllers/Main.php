@@ -62,15 +62,7 @@ class Main extends CI_Controller {
 		$this->load->view('layouts/footer');
 	}
 	
-	public function contactUs(){
-	    
-	    $data['page'] = 'Contact Us';
-	    $data['projects'] = $this->mmain->getProjects();
-
-	    $this->load->view('layouts/header',$data);
-		$this->load->view('contact-us');
-		$this->load->view('layouts/footer');
-	}
+	
 	
 	public function getProjects(){
 	    
@@ -84,6 +76,48 @@ class Main extends CI_Controller {
 
 	    $this->load->view('layouts/header',$data);
 		$this->load->view('projects');
+		$this->load->view('layouts/footer');
+	}
+	
+	public function getCareers(){
+	    
+	    $data['page'] = 'Careers';
+	    $data['careers'] = $this->mmain->getCareers();
+
+	    $this->load->view('layouts/header',$data);
+		$this->load->view('careers');
+		$this->load->view('layouts/footer');
+	}
+	
+	public function getCareerDetails(){
+	    
+	    $careerID = $this->uri->segment(2);
+	    $data['page'] = 'Careers';
+	    
+	    $careerDetails = $this->mmain->getCareerDetails($careerID);
+	    foreach($careerDetails as $cd){
+	        $data['title'] = $cd['c_title'];
+	        $data['description'] = $cd['c_description'];
+	        $data['overview'] = explode("|",$cd['c_overview']);
+	        $data['qualifications'] = explode("|",$cd['c_qualifications']);
+	        $data['location'] = $cd['c_location'];
+	        $data['type'] = $cd['c_type'];
+	        $data['dateadded'] = $cd['c_dateadded'];
+	    }
+	    
+	    $this->load->view('layouts/header',$data);
+		$this->load->view('career-details');
+		$this->load->view('layouts/footer');
+	    
+	}
+	
+	public function contactUs(){
+	    
+	    $data['page'] = 'Contact Us';
+	    $data['projects'] = $this->mmain->getProjects();
+
+	    $this->load->view('layouts/header',$data);
+		$this->load->view('contact-us');
 		$this->load->view('layouts/footer');
 	}
 

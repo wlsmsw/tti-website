@@ -88,7 +88,7 @@
                                         <a class="" href="news.php">News</a>
                                     </li>
                                     <li class="">
-                                        <a class="" href="careers.php">Careers</a>
+                                        <a class="" href="<?=base_url('careers')?>">Careers</a>
                                     </li>
                                     <li class="">
                                         <a class="" href="<?=base_url('contact-us')?>">Contact Us</a>

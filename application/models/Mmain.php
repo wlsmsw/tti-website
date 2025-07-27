@@ -41,4 +41,28 @@ class Mmain extends CI_Model {
 	    
 	}
 	
+	public function getCareers(){
+	    
+	    $query = "SELECT c_code, c_title, c_description, c_dateadded FROM tti_careers WHERE c_active = :status";
+
+		$param[':status'] = 1;
+
+		$result = $this->conn->query($query, $param);
+
+		return ($result) ? $result : array();
+	    
+	}
+	
+	public function getCareerDetails($careerID){
+	    
+	    $query = "SELECT * FROM tti_careers WHERE c_code = :careerID";
+	    
+	    $param[':careerID'] = $careerID;
+	    
+	    $result = $this->conn->query($query, $param);
+
+		return ($result) ? $result : array();
+	    
+	}
+	
 }

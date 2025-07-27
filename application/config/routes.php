@@ -63,3 +63,7 @@ $route['quality-policy']    =   'main/qualityPolicy';
 
 /*projects*/
 $route['projects/(:any)']   =   'main/getProjects';
+
+/*careers*/
+$route['careers']           =   'main/getCareers';
+$route['careers/(:any)']    =   'main/getCareerDetails';

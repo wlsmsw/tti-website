@@ -22,7 +22,7 @@
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 
         <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
         
         <!-- light slider -->
         <link type="text/css" rel="stylesheet" href="<?=base_url('assets/css/lightslider.min.css')?>" />          
@@ -88,8 +88,8 @@
                                     <li class="">
                                         <a class="" href="news.php">News</a>
                                     </li>
-                                    <li class="">
-                                        <a class="" href="careers.php">Careers</a>
+                                    <li class="<?=($page == 'Careers') ? 'active' : ''?>">
+                                        <a class="" href="<?=base_url('careers')?>">Careers</a>
                                     </li>
                                     <li class="">
                                         <a class="" href="<?=base_url('contact-us')?>">Contact Us</a>

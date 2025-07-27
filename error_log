@@ -1,1 +1,3 @@
 [15-Jul-2025 01:06:41 UTC] PHP Parse error:  syntax error, unexpected token "<<" in /home/mswmngr/public_html/tti-prod/application/config/constants.php on line 92
+[25-Jul-2025 23:37:07 Asia/Manila] PHP Fatal error:  Cannot redeclare Main::getProjects() in /home/mswmngr/public_html/tti-prod/application/controllers/Main.php on line 84
+[28-Jul-2025 02:57:10 Asia/Manila] PHP Fatal error:  Cannot redeclare Mmain::getProjects() in /home/mswmngr/public_html/tti-prod/application/models/Mmain.php on line 44
