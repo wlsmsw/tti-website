@@ -1482,7 +1482,7 @@ Media queries for responsive design
 	}
 	.navik-menu li > ul ul {
 		top: -27px;
-		left: 100%;
+		left: -100% !important;
 	}
 	.navik-menu li.submenu-right > ul ul {
 		left: -100% !important;

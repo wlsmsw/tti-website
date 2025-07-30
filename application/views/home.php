@@ -71,8 +71,26 @@
                                             <li><a class="" href="<?=base_url('quality-policy')?>">Quality Policy & Objectives</a></li>
                                         </ul>
                                     </li>
-                                    <li class="">
-                                        <a class="" href="products.php">Products/Services</a>
+                                    <li class="<?=($page == 'Products') ? 'active' : ''?>">
+                                        <a class="" href="#">Products</a>
+                                        <ul>
+                                                     
+                                            <?php
+                                                foreach($products as $k=>$v){
+                                                    if(isset($v['sub'])){
+                                                        echo '<li><a class="" href="#">'.$v['name'].'</a><ul>';
+                                                        foreach($v['sub'] as $k1 => $v1){
+                                                            echo '<li><a class="" href="'.base_url('products/'.$k.'/'.$k1).'">'.$v1['name'].'</a></li>';
+                                                        }
+                                                        echo '</ul>';
+                                                    }else{
+                                                        echo '<li><a class="" href="'.base_url('products/'.$k).'">'.$v['name'].'</a>';
+                                                    }
+                                                    echo '</li>';
+                                                }
+                                            ?>
+                                            
+                                        </ul>
                                     </li>
                                     <li class="">
                                         <a class="" href="#">Projects</a>

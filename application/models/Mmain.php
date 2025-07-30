@@ -28,6 +28,42 @@ class Mmain extends CI_Model {
 	    
 	}
 	
+	public function getProducts(){
+	    
+	    $query = "SELECT * FROM tti_product_category  A LEFT JOIN tti_subproduct B ON A.PS_ID = B.product_id WHERE product_active = :status ORDER BY A.PS_ID, B.PCS_ID";
+
+		$param[':status'] = 1;
+
+		$result = $this->conn->query($query, $param);
+
+		return ($result) ? $result : array();
+	    
+	}
+	
+	public function getProductTitle($productSlug){
+	    
+	    $query = "SELECT product_name FROM tti_product_category WHERE product_slug = :product_slug";
+
+		$param[':product_slug'] = $productSlug;
+
+		$result = $this->conn->query($query, $param);
+
+		return ($result) ? $result[0]['product_name'] : array();
+	    
+	}
+	
+	public function getSubProductTitle($subproductSlug){
+	    
+	    $query = "SELECT subproduct_name FROM tti_subproduct WHERE subproduct_slug = :subproductSlug";
+
+		$param[':subproductSlug'] = $subproductSlug;
+
+		$result = $this->conn->query($query, $param);
+
+		return ($result) ? $result[0]['subproduct_name'] : array();
+	    
+	}
+	
 	public function getProjectDetails($projName){
 	    
 	    $query = "SELECT * FROM tti_project A INNER JOIN tti_project_category B ON A.PCat_ID = B.PC_ID WHERE A.project_status = :status AND B.cat_slug = :catslug";

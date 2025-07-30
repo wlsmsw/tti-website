@@ -42,11 +42,10 @@
                             <p>Follow us on our social media accounts</p>
                             
                             <ul>
-                              <li><a href="#" target="_blank"><span class="fa fa-facebook"></span></a></li>
-                              <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a></li>
-                              <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a></li>
-                              <li><a href="#" target="_blank"><span class="fa fa-linkedin"></span></a></li>
-                              <li><a href="#" target="_blank"><span class="fa fa-youtube"></span></a></li>
+                              <li><a href="#" target="_blank"><span class="fa-brands fa-facebook-f"></span></a></li>
+                              <li><a href="#" target="_blank"><span class="fa-brands fa-x-twitter"></span></a></li>
+                              <li><a href="#" target="_blank"><span class="fa-brands fa-instagram"></span></a></li>
+                              <li><a href="#" target="_blank"><span class="fa-brands fa-youtube"></span></a></li>
                             </ul>
                             
                             

@@ -16,6 +16,7 @@ class Main extends CI_Controller {
 
 		$data['page'] = 'Home';
 		$data['projects'] = $this->mmain->getProjects();
+		$data['products'] = $this->getProducts();
 		
 		//$this->load->view('layouts/header', $data);
 		$this->load->view('home',$data);
@@ -26,6 +27,7 @@ class Main extends CI_Controller {
 	    
 	    $data['page'] = 'Cookie Policy';
 	    $data['projects'] = $this->mmain->getProjects();
+	    $data['products'] = $this->getProducts();
 
 	    $this->load->view('layouts/header',$data);
 		$this->load->view('cookie-policy');
@@ -36,6 +38,7 @@ class Main extends CI_Controller {
 	    
 	    $data['page'] = 'About Us';
 	    $data['projects'] = $this->mmain->getProjects();
+	    $data['products'] = $this->getProducts();
 
 	    $this->load->view('layouts/header',$data);
 		$this->load->view('company-overview');
@@ -46,6 +49,7 @@ class Main extends CI_Controller {
 	    
 	    $data['page'] = 'About Us';
 	    $data['projects'] = $this->mmain->getProjects();
+	    $data['products'] = $this->getProducts();
 
 	    $this->load->view('layouts/header',$data);
 		$this->load->view('mission-vision');
@@ -56,6 +60,7 @@ class Main extends CI_Controller {
 	    
 	    $data['page'] = 'About Us';
 	    $data['projects'] = $this->mmain->getProjects();
+	    $data['products'] = $this->getProducts();
 
 	    $this->load->view('layouts/header',$data);
 		$this->load->view('quality-policy');
@@ -71,6 +76,7 @@ class Main extends CI_Controller {
 	    
 	    $data['title'] = strtoupper(str_replace("-"," ",$projName));
 	    $data['projects'] = $this->mmain->getProjects();
+	    $data['products'] = $this->getProducts();
 	    
 	    $data['project_details'] = $this->mmain->getProjectDetails($projName);
 
@@ -82,6 +88,8 @@ class Main extends CI_Controller {
 	public function getCareers(){
 	    
 	    $data['page'] = 'Careers';
+	    $data['projects'] = $this->mmain->getProjects();
+	    $data['products'] = $this->getProducts();
 	    $data['careers'] = $this->mmain->getCareers();
 
 	    $this->load->view('layouts/header',$data);
@@ -93,6 +101,8 @@ class Main extends CI_Controller {
 	    
 	    $careerID = $this->uri->segment(2);
 	    $data['page'] = 'Careers';
+	    $data['projects'] = $this->mmain->getProjects();
+	    $data['products'] = $this->getProducts();
 	    
 	    $careerDetails = $this->mmain->getCareerDetails($careerID);
 	    foreach($careerDetails as $cd){
@@ -115,10 +125,58 @@ class Main extends CI_Controller {
 	    
 	    $data['page'] = 'Contact Us';
 	    $data['projects'] = $this->mmain->getProjects();
+	    $data['products'] = $this->getProducts();
 
 	    $this->load->view('layouts/header',$data);
 		$this->load->view('contact-us');
 		$this->load->view('layouts/footer');
+	}
+	
+	
+	public function getProductDetails(){
+	    
+	    $data['product_slug'] = $this->uri->segment(2);
+	    
+	    $data['page'] = 'Products';
+	    $data['projects'] = $this->mmain->getProjects();
+	    $data['products'] = $this->getProducts();
+        
+        $data['product_title'] = $this->mmain->getProductTitle($data['product_slug']);
+        
+	    $this->load->view('layouts/header',$data);
+		$this->load->view('products');
+		$this->load->view('layouts/footer');
+	}
+	
+	public function getSubProductDetails(){
+	    
+	    $data['subproduct_slug'] = $this->uri->segment(3);
+	    
+	    $data['page'] = 'Products';
+	    $data['projects'] = $this->mmain->getProjects();
+	    $data['products'] = $this->getProducts();
+        
+        $data['subproduct_title'] = $this->mmain->getSubProductTitle($data['subproduct_slug']);
+        
+	    $this->load->view('layouts/header',$data);
+		$this->load->view('subproducts');
+		$this->load->view('layouts/footer');
+	}
+	
+	/*get products*/
+	public function getProducts(){
+	    
+	    $productArray = [];
+	    $products = $this->mmain->getProducts();
+	    
+	    foreach($products as $p){
+	        $productArray[$p['product_slug']]['name'] = $p['product_name'];
+	        if($p['PCS_ID'] != ''){
+	            $productArray[$p['product_slug']]['sub'][$p['subproduct_slug']]['name'] = $p['subproduct_name'];
+	        }
+	    }
+	    
+	    return $productArray;
 	}
 
 

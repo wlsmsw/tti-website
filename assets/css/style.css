@@ -198,6 +198,8 @@ box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.05);}
 .subpage-content p a {font:400 16px 'Work Sans';color:#d60f07;line-height:1.45;margin:20px 0;}
 .subpage-content .centered p {font:400 16px 'Work Sans';color:#222;line-height:1.45;margin:20px 0;text-align:center;}
 .subpage-content-main img {display: block; margin: auto; width: 50%;}
+.subpage-content-main .turnkey {display: block; margin-top: 10px; margin-bottom: 20px; width: 100%;}
+.subpage-content-main .project-cycle {display: block; margin-top: 10px; margin-bottom: 20px; width: 100%;}
 
 .subpage-title,.subpage-title-projects {height:21vh;position:relative;margin-top:7vh;}
 .subpage-title h2,.subpage-title-projects h2 {position:absolute;top:50%;left: 50%;-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);

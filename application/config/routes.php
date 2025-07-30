@@ -49,21 +49,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'main/homepage';
+$route['default_controller']        = 'main/homepage';
 $route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
+$route['translate_uri_dashes']      = FALSE;
 
-$route['cookie-policy']     =   'main/policyCookie';
-$route['contact-us']        =   'main/contactUs';
+$route['cookie-policy']             =   'main/policyCookie';
+$route['contact-us']                =   'main/contactUs';
 
 /*about us*/
-$route['company-overview']  =   'main/companyOverview';
-$route['mission-vision']    =   'main/missionVision';
-$route['quality-policy']    =   'main/qualityPolicy';
+$route['company-overview']          =   'main/companyOverview';
+$route['mission-vision']            =   'main/missionVision';
+$route['quality-policy']            =   'main/qualityPolicy';
 
 /*projects*/
-$route['projects/(:any)']   =   'main/getProjects';
+$route['projects/(:any)']           =   'main/getProjects';
 
 /*careers*/
-$route['careers']           =   'main/getCareers';
-$route['careers/(:any)']    =   'main/getCareerDetails';
+$route['careers']                   =   'main/getCareers';
+$route['careers/(:any)']            =   'main/getCareerDetails';
+
+/*products*/
+$route['products/(:any)']           =   'main/getProductDetails';
+$route['products/(:any)/(:any)']    =   'main/getSubProductDetails';
