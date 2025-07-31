@@ -73,7 +73,7 @@
                                         </ul>
                                     </li>
                                     
-                                     <li class="<?=($page == 'Products') ? 'active' : ''?>">
+                                    <li class="<?=($page == 'Products') ? 'active' : ''?>">
                                         <a class="" href="#">Products</a>
                                         <ul>
                                                      
