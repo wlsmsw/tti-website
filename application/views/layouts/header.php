@@ -102,7 +102,6 @@
                                             <?php 
                                                 foreach($projects as $p){
                                                     echo '<li><a class="" href="'.base_url('projects/'.$p['cat_slug']).'">'.$p['cat_name'].'</a></li>';
-                                                    echo '<ul><li>test</li></ul>';
                                                 }
                                             ?>
                                         </ul>
