@@ -18,7 +18,7 @@
                         
                             <p>Tochigi-ken Technologies International Inc. was established last August 10, 2006 as Cleanroom/ESD Consumables, Toolings and Fabrication Supplier for Semiconductors, Electronics, medical devices, food processing and pharmaceutical companies.</p>
                             
-                            <p>As a result of diversification during the period, TTI ventured into other business – Construction. Started with Cleanroom Design and Construct, then expanded to general construction works covering Civil/Architectural, Mechanical,Electrical Works. November 2013 –StartedFabrication / MachineShop.</p>
+                            <p>As a result of diversification during the period, TTI ventured into other business – Construction. Started with Cleanroom Design and Construct, then expanded to general construction works covering Civil / Architectural, Mechanical, Electrical Works. November 2013 – Started Fabrication / Machine Shop.</p>
                             
                             <p><strong>Our Policy is to create a Global perspective as a solution provider responding to the needs of our customer with Best Quality, Lead Time and Low Cost</strong></p>
                             

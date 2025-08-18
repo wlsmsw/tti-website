@@ -136,12 +136,41 @@
 
                             <h2 data-aos="fade-up" data-aos-delay="200">Your solution in innovative construction</h2>
                             <p data-aos="fade-up" data-aos-delay="400">Our Policy is to create a Global perspective as a solution provider responding to the needs of our customer with Best Quality, Lead Time and Low Cost.</p>
-                            <a href="<?=base_url('company-overview')?>" class="hvr-shadow-radial link-out" data-aos="fade-up" data-aos-delay="600">Learn more</a> <!--add about us link-->
                         </div>
                     </div>
             </div>
         </div>
         
+        <section id="wf-intro">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6">
+                         <img src="<?=base_url('assets/img/about-us-home.png')?>">
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="about-title">
+                            <h2>About Us</h2>
+                        </div>
+
+                        <p>Tochigi-ken Technologies International Inc. was established last August 10, 2006 as Cleanroom/ESD Consumables, Toolings and Fabrication Supplier for Semiconductors, Electronics, medical devices, food processing and pharmaceutical companies.</p>
+                            
+                        <p>As a result of diversification during the period, TTI ventured into other business – Construction. Started with Cleanroom Design and Construct, then expanded to general construction works covering Civil / Architectural, Mechanical, Electrical Works. November 2013 – Started Fabrication / Machine Shop.</p>
+                        
+                        <p><strong>Our Policy is to create a Global perspective as a solution provider responding to the needs of our customer with Best Quality, Lead Time and Low Cost</strong></p>
+
+                        <p>&nbsp;</p>
+
+                        <p><strong><a href="<?=base_url('company-overview')?>">READ MORE</a></strong></p>
+
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </section>
 
         <section id="wf-clients">
             <div class="container">
