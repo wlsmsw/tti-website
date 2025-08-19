@@ -343,6 +343,28 @@ border-top: 1px solid #ccc;
 }
 
 
+/* projects gallery */
+#wf-subpage img {object-fit: cover; width:100%; height: auto;}
+
+
+
+#wf-subpage .img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 5vh;
+}
+
+
+#wf-subpage .prodcard h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #E66F6A;
+background: radial-gradient(circle,rgba(230, 111, 106, 1) 30%, rgba(214, 15, 7, 1) 70%);
+  padding: 5px;
+}
+
 
 
 @media only screen and (max-width:1440px) {

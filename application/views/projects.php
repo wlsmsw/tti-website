@@ -7,32 +7,52 @@
         <div class="subpage-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         
                         <div class="subpage-title">
-                            <h2><?=$title;?></h2>
-                        </div>
-                        
-                        <div class="demo">
-                            <ul id="lightSlider">
-                        
-                                <?php 
-                                    foreach($project_details as $pdetails){
-                                        echo '<li data-thumb="'.base_url('assets/img/projects/'.$pdetails['cat_slug'].'/'.$pdetails['project_image']).'">
-                                            <img src="'.base_url('assets/img/projects/'.$pdetails['cat_slug'].'/'.$pdetails['project_image']).'" style="width: 100% !important" />
-                                            <div class="centered"><p>'.$pdetails['project_name'].'</p></div>
-                                        </li>';
-                                    }
-                                ?>
-                                
-                            </ul>
+                            <h2 style="text-align: left"><?=$title;?></h2>
                         </div>
 
-                        <div class="clearfix"></div>
-    
+
                     </div>
-                </div>
+
+                </div>                    
+                
+                <?php
+
+
+                    $cnt = 1;
+
+                    foreach($project_details as $pdetails){
+
+                        if($cnt % 2 != 0){
+                            echo '<div class="row">';
+                        }
+
+                            echo '<div class="col-md-6">
+                                    <div class="img-container">
+                                    <img src="'.base_url('assets/img/projects/'.$pdetails['cat_slug'].'/'.$pdetails['project_image']).'">
+                                    <div class="prodcard"><h3>'.$pdetails['project_name'].'</h3></div>
+                                    </div>
+                                    </div>';
+
+                        if($cnt % 2 == 0){
+                            echo '</div>';
+                        }
+
+                        $cnt++;
+
+                    }
+
+                ?>
+
+
+                <div class="clearfix"></div>
+    
+                    
             </div>
         </div>
+
+
   
 </section>

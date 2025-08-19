@@ -158,7 +158,7 @@
                             
                         <p>As a result of diversification during the period, TTI ventured into other business – Construction. Started with Cleanroom Design and Construct, then expanded to general construction works covering Civil / Architectural, Mechanical, Electrical Works. November 2013 – Started Fabrication / Machine Shop.</p>
                         
-                        <p><strong>Our Policy is to create a Global perspective as a solution provider responding to the needs of our customer with Best Quality, Lead Time and Low Cost</strong></p>
+                        <p><strong>Our Policy is to create a Global perspective as a solution provider responding to the needs of our customer with Best Quality, Lead Time and Low Cost.</strong></p>
 
                         <p>&nbsp;</p>
 
