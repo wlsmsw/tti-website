@@ -7,10 +7,10 @@
         <div class="subpage-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         
                         <div class="subpage-title">
-                            <h2 style="text-align: left"><?=$title;?></h2>
+                            <h2><?=$title;?></h2>
                         </div>
 
 
