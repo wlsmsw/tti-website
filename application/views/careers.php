@@ -94,7 +94,7 @@
                         <?php } ?>
                         
                         <div class="subpage-content-main">
-                            <p>Interested applicants may email their CVs to <a href="mailto:hr@tochigiken-tech.com" target="_blank">hr@tochigiken-tech.com</a> to apply.</p>
+                            <p>Interested applicants may email their CVs to <a href="mailto:hr_recruitment@tochigiken-tech.com" target="_blank">hr_recruitment@tochigiken-tech.com</a> to apply.</p>
                         </div>
                         
                         <div class="clearfix"></div>
