@@ -172,6 +172,28 @@
             </div>
         </section>
 
+        <section id="wf-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="about-title center">
+                            <h2>What We Do</h2>
+                        </div>
+                        <div class="about-section">
+                            <p>Our services run the full line of building project, from pre-construction planning to actual construction and construction management, as well design and build schemes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 icon-about"><img src="<?=base_url('assets/img/p1.jpeg')?>">Pre-Construction</div>
+                    <div class="col-lg-3 icon-about"><img src="<?=base_url('assets/img/p2.jpg')?>">General Construction</div>
+                    <div class="col-lg-3 icon-about"><img src="<?=base_url('assets/img/p3.jpg')?>">Construction Management</div>
+                    <div class="col-lg-3 icon-about"><img src="<?=base_url('assets/img/p4.jpg')?>">Design / Build</div>
+                </div>
+            </div>
+        </section>
+
         <section id="wf-clients">
             <div class="container">
                 <div class="row"> 
