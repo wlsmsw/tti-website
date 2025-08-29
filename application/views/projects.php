@@ -25,18 +25,18 @@
 
                     foreach($project_details as $pdetails){
 
-                        if($cnt % 2 != 0){
+                        if($cnt % 3 == 1){
                             echo '<div class="row">';
                         }
 
-                            echo '<div class="col-md-6">
+                            echo '<div class="col-md-4">
                                     <div class="img-container">
                                     <img src="'.base_url('assets/img/projects/'.$pdetails['cat_slug'].'/'.$pdetails['project_image']).'">
                                     <div class="prodcard"><h3>'.$pdetails['project_name'].'</h3></div>
                                     </div>
                                     </div>';
 
-                        if($cnt % 2 == 0){
+                        if($cnt % 3 == 0){
                             echo '</div>';
                         }
 
